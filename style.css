@@ -1,0 +1,112 @@
+body{
+    font-size: 15px;
+    max-width: 1440px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    margin : 0;
+    box-sizing: border-box;
+    
+   
+    
+}
+.bright-orange{
+    background-color:hsl(31, 77%, 52%) ; 
+}
+.Dark-cyan{
+    background-color:hsl(184, 100%, 22%) ; 
+}
+.Very-dark-cyan{
+    background-color:hsl(179, 100%, 13%) ; 
+}
+main{
+    
+    position: absolute;
+    top: 50%;
+    left :50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    height : 60vh;
+    width: 50vw;
+    flex-wrap: wrap;
+  
+
+
+}
+
+.image{
+    padding : 5em;
+    position: relative;
+    
+}
+img{
+    display: block;
+    position :absolute;
+    top : 80px;
+    left: 48px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis : 33.3333%;
+    flex-grow : 1;
+    
+}
+.info{
+    padding: 3em;
+    margin-bottom: 1em;
+}
+.info p {
+    line-height: 1.8em;
+    font-size : 1.05rem;
+    
+   
+}
+.info h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size : 2.5rem;
+  
+}
+
+
+#lm1:hover{
+    background-color: white;
+    color: hsl(31, 77%, 52%);
+}
+#lm2:hover{
+    background-color: white;
+    color: hsl(184, 100%, 22%);
+}
+#lm3:hover{
+    background-color: white;
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+.button{
+   padding: 2em;
+}
+
+.learn-more{
+    border : 1px solid white;
+    width: 50%;
+    border-radius: 27px;
+    padding : .5em 1em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display : block ;
+
+}
+
+@media (max-width: 500px) { 
+    main{
+        width : 90vw;
+    }
+    section{
+        flex-basis : 100%;
+        flex-grow: 1;
+    }
+
+}
